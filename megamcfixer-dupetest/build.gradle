@@ -31,5 +31,5 @@ java {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 25
+	it.options.release = 21 // Java 21 bytecode to match the mixin compatibilityLevel; still runs on Java 25
 }

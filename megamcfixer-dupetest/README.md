@@ -25,9 +25,13 @@ can't fool it. To double-check, relog: ghost items vanish on relog, real ones st
 - `doLimitedCrafting` must be off (the default).
 - If the game crashes mid-test, delete `<world>/datapacks/megamcfixer_dupe_test` and run `/reload`.
 
-## Build
-1. Fill in `loader_version` and `loom_version` in `gradle.properties` from
-   https://fabricmc.net/develop/ (Minecraft 26.3).
+## Prebuilt jar
+`dist/megamcfixer-dupetest-1.0.0.jar` is ready to use: drop it in your `mods` folder
+(Fabric Loader 0.20.1, Minecraft 26.3). It was compiled against your 26.3 classes and
+Fabric's Mixin 0.17.5. No Fabric API needed.
+
+## Build it yourself
+1. `gradle.properties` already has loader 0.20.1 and Loom 1.19-SNAPSHOT.
 2. `gradle build` (or copy the Gradle wrapper from the official template and run `./gradlew build`).
 3. The mod jar is in `build/libs/`. Drop it in your `mods` folder.
 
