@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "megamcfixer-dupetest",
+  "version": "1.0.0",
+  "name": "megamcfixer crafting dupe test",
+  "description": "Adds a 'Dupe test' button to the crafting table that checks the ResultSlot crafting dupe in singleplayer.",
+  "environment": "client",
+  "mixins": [
+    "megamcfixer-dupetest.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "*",
+    "java": ">=25"
+  }
+}
